@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:rgb(26,26,27);
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+html{
+    font-family: 'Nunito';
+    font-size: 12px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 100px 0;
+    background-color: rgb(26,26,27);
+}
+.brand{
+    text-align: center;
+    font-size: 4rem;
+    color: antiquewhite;
+    margin-bottom: 30px;
+
+}
+.container{
+    width: 90%;
+    height: auto;
+}
+form{
+    width: 90%;
+    margin:  auto;
+    margin-bottom: 20px;
+    max-width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+form input{
+   width: 100%;
+   padding: 10px;
+   font-size: 1.5rem;
+   border: none;
+   outline: none;
+   display: inline-block;
+   background-color: antiquewhite;
+}
+form ion-icon{
+    font-size: 3rem;
+    position: relative;
+    right: 40px;
+    display: inline;
+    background-color: antiquewhite
+}
+.search-result{
+    display: grid;
+    grid-gap: 15px;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    /* background-color: #404041; */
+
+}
+.item{
+    width: 100%;
+    border-radius: 8px;
+    background-color: rgb(37,37,37);
+    padding: 15px;
+    /* overflow: hidden; */
+
+}
+.item img{
+    width: 100%;
+    height: 340px;
+    border-radius: 4px;
+}
+.flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.title{
+    color: whitesmoke;
+    font-weight: 400;
+    font-size: 3rem;
+    margin: 20px 10px 0 0;
+}
+.view{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    background-color: #404041;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    align-self: flex-start;
+}
+.item-data{
+    color: whitesmoke;
+    font-size: 1.4rem;
+    line-height: 3rem;
+}
+.initial .brand{
+    font-size: 9rem;
+    margin-top: 50px;
+}
+.initial form{
+    max-width: 800px;
+}
+
+.initial form input{
+    font-size: 2rem;
+   
+}
+@media (max-width: 768px) {
+    main{
+        overflow: hidden;
+    }
+    .search-result {
+      grid-gap: 10px;
+    }
+    .container.initial .brand {
+      font-size: 4rem;
+    }
+    .container.initial form {
+      max-width: 620px;
+    }
+    .container.initial form input {
+      padding: 10px;
+      font-size: 1rem;
+    }}
+
